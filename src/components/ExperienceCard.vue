@@ -11,7 +11,7 @@ const experience = [
       'Manejo de autenticación y permisos de usuario',
       'Enfoque en mantenibilidad, escalabilidad y experiencia de uso',
     ],
-    stack: ['Laravel', 'Inertia.js', 'Vue.js', 'Tailwind CSS', 'MySQL', 'API WhatsApp'],
+    stack: ['Vue.js', 'HTML', 'CSS', 'JavaScript', 'Firebase', 'Cloudinary'],
   },
   {
     id: 2,
