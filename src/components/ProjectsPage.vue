@@ -12,11 +12,10 @@ import javascriptIcon from '@/assets/icons/javascript.png'
 import htmlIcon from '@/assets/icons/HTML5.svg.png'
 import css3Icon from '@/assets/icons/CSS3.svg.png'
 import phpIcon from '@/assets/icons/php.svg.png'
-import mysqlIcon from '@/assets/icons/mysql.png'
 import wordpressIcon from '@/assets/icons/wordpress.png'
 import woocomerceIcon from '@/assets/icons/woocommerce.png'
-import whatsAppIcon from '@/assets/icons/whatsapp.png'
-import inertiaIcon from '@/assets/icons/inertia.png'
+import firebaseIcon from '@/assets/icons/firebaseIcon.png'
+import cloudinaryIcon from '@/assets/icons/cloudinary.webp'
 
 const projects = [
   {
@@ -80,19 +79,16 @@ const projects = [
   },
   {
     id: 5,
-    title: 'Catálogo de Productos para Distrimaq — En desarrollo',
+    title: 'Catálogo de Productos para Distrimaq',
     description:
-      'Catálogo de productos con carrito persistente y gestión administrativa, que permite enviar pedidos generados desde el carrito vía WhatsApp.',
+      'Catálogo de productos con acceso público y autenticación de usuarios, que permite la gestión administrativa mediante operaciones CRUD utilizando Firebase e imagenes guardadas en Cloudinary.',
     tech: [
-      { icon: laravelIcon, name: 'Laravel' },
       { icon: vueIcon, name: 'Vue' },
-      { icon: tailwindIcon, name: 'Tailwind' },
-      { icon: mysqlIcon, name: 'MySQL' },
-      { icon: whatsAppIcon, name: 'API WhatsApp' },
-      { icon: inertiaIcon, name: 'Inertia.js' },
       { icon: htmlIcon, name: 'HTML' },
       { icon: css3Icon, name: 'CSS' },
       { icon: javascriptIcon, name: 'Javascript' },
+      { icon: firebaseIcon, name: 'Firebase' },
+      { icon: cloudinaryIcon, name: 'Cloudinary' },
     ],
     link: 'https://github.com/MartinFoche/distrimaq',
     image: distrimaqImage,

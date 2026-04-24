@@ -23,7 +23,7 @@ export default {
       },
       keyframes: {
         'pulse-purple': {
-          '0%, 100%': { background: '#1f0591ff' },
+          '0%, 100%': { background: 'rgb(34, 3, 75)'},
           '50%': { background: 'rgba(21, 0, 48, 1)' },
         },
         'spin-once': {
