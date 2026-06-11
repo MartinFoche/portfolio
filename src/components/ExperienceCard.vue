@@ -1,6 +1,21 @@
 <script setup>
 const experience = [
   {
+    id: 0,
+    role: 'Tesina',
+    company: 'Licenciatura en Sistemas de Información',
+    period: 'Julio 2026',
+    responsibilities: [
+      'Investigación, implementacion y análisis de arquitecturas de Deep Learning para reconocimiento de acciones en video',
+      'Implementación y entrenamiento de modelos R(2+1)D utilizando Python y PyTorch',
+      'Preprocesamiento, organización y preparación de datasets de video para entrenamiento y validación',
+      'Evaluación del rendimiento de los modelos mediante métricas de clasificación y análisis de resultados',
+      'Comparación de enfoques y optimización de hiperparámetros para mejorar la precisión del modelo',
+      'Documentación técnica y elaboración de una tesina académica sobre visión por computadora y aprendizaje profundo',
+    ],
+    stack: ['Python']
+  },
+  {
     id: 1,
     role: 'Freelance Developer',
     company: 'Distrimaq',

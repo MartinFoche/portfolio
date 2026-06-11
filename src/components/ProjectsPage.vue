@@ -4,6 +4,7 @@ import rebaseitImage from '@/assets/projects/rebaseit.png'
 import verifarmaImage from '@/assets/projects/verifarma.jpg'
 import portafolioImage from '@/assets/projects/portafolio.png'
 import distrimaqImage from '@/assets/projects/distrimaq.png'
+import appTesinaImage from '@/assets/projects/appTesina.png'
 import vueIcon from '@/assets/icons/vue.svg.png'
 import laravelIcon from '@/assets/icons/laravel.svg.png'
 import tailwindIcon from '@/assets/icons/tailwind.svg.png'
@@ -16,6 +17,7 @@ import wordpressIcon from '@/assets/icons/wordpress.png'
 import woocomerceIcon from '@/assets/icons/woocommerce.png'
 import firebaseIcon from '@/assets/icons/firebaseIcon.png'
 import cloudinaryIcon from '@/assets/icons/cloudinary.webp'
+import pythonIcon from '@/assets/icons/python.svg.png'
 
 const projects = [
   {
@@ -93,6 +95,17 @@ const projects = [
     link: 'https://github.com/MartinFoche/distrimaq',
     image: distrimaqImage,
   },
+  {
+    id: 6,
+    title:'Tesina de grado',
+    description:
+    'Investigación, implementación y análisis de modelos R(2+1)D para reconocimiento de acciones en video, incluyendo procesamiento de datasets, entrenamiento de redes neuronales profundas y análisis de métricas de rendimiento.',
+    tech: [
+      { icon: pythonIcon, name: 'Python' }, 
+    ],
+    link: 'https://github.com/MartinFoche/tesina',
+    image: appTesinaImage,
+  }
 ]
 </script>
 <template>
