@@ -5,7 +5,7 @@
     <h2 class="text-2xl md:text-3xl font-bold mb-4 text-white/80">Sobre mí</h2>
 
     <p class="text-gray-300 text-lg md:text-xl leading-relaxed">
-      Buenas! Soy Martin, desarrollador fullstack con una fuerte pasión por la lógica y la
+      Buenas! Soy Martín, desarrollador fullstack con una fuerte pasión por la lógica y la
       resolución de problemas. Me encanta enfrentar desafíos que requieren pensamiento analítico, ya
       sea diseñando sistemas eficientes, resolviendo cubos de Rubik o jugando videojuegos. También
       disfruto mantenerme activo en el gimnasio, lo que me ayuda a mantener la concentración y la
