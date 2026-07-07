@@ -6,7 +6,7 @@
         >Hola, soy Martín</span
       >
     </h1>
-    <h2 class="text-lg sm:text-xl text-gray-400">Desarrollador Web • Laravel & Vue</h2>
+    <h2 class="text-lg sm:text-xl text-gray-400">Licenciado en Sistemas de Información • Desarrollador Web Full Stack</h2>
   </section>
 </template>
 <style>
