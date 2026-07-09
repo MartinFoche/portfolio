@@ -92,7 +92,7 @@ const projects = [
       { icon: firebaseIcon, name: 'Firebase' },
       { icon: cloudinaryIcon, name: 'Cloudinary' },
     ],
-    link: 'https://github.com/MartinFoche/distrimaq',
+    link: 'https://github.com/MartinFoche/catalogo-distrimaq',
     image: distrimaqImage,
   },
   {
