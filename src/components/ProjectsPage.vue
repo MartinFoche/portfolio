@@ -18,7 +18,7 @@ import woocomerceIcon from '@/assets/icons/woocommerce.png'
 import firebaseIcon from '@/assets/icons/firebaseIcon.png'
 import cloudinaryIcon from '@/assets/icons/cloudinary.webp'
 import pythonIcon from '@/assets/icons/python.svg.png'
-import postgresqlIcon from '@/assets/icons/postgresqlIcon.webp'
+import postgresqlIcon from '@/assets/icons/postgresql.svg.png'
 import fastApiIcon from '@/assets/icons/fastapiIcon.webp'
 import reactIcon from '@/assets/icons/react.svg.png'
 import msiSistemaGestion from '@/assets/projects/msi-sistema-gestion.png'
@@ -187,7 +187,7 @@ const projects = [
     <h2 class="text-3xl font-bold mb-6 text-white/80">Proyectos</h2>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
       <a
-        v-for="(p, index) in projects"
+        v-for="(p, index) in [...projects].reverse()"
         :key="p.title"
         :href="p.link || '#'"
         @click="!p.link && $event.preventDefault()"
