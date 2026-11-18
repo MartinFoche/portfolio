@@ -2,6 +2,34 @@
 const experience = [
   {
     id: 0,
+    role: 'Desarrollador de Software',
+    company: 'MSI Integración de Sistemas',
+    period: 'Agosto 2026 - Noviembre 2026',
+    responsibilities: [
+      'Desarrollo de soluciones de software empresariales e industriales utilizando Python, TypeScript y tecnologías web',
+      'Implementación de aplicaciones internas para gestión de jornadas laborales, vacaciones, servicios y seguimiento de proyectos',
+      'Desarrollo de dashboards de métricas, tableros Kanban para análisis y planificación de tareas mediante metodologías ágiles',
+      'Desarrollo de sistemas de gestión de activos e infraestructura con FastAPI, Vue.js y PostgreSQL',
+      'Integración y optimización de procedimientos almacenados en SQL Server, junto con tareas de monitoreo y diagnóstico de redes',
+      'Desarrollo de una solución de monitoreo industrial mediante integración con PLC y Node-RED para la captura, trazabilidad de variables operativas y consumo energético',
+      'Utilización de herramientas de IA como Claude Code para asistir en el desarrollo, documentación y análisis de código',
+    ],
+    stack: [
+      'Python',
+      'TypeScript',
+      'JavaScript',
+      'React',
+      'Vue.js',
+      'FastAPI',
+      'PostgreSQL',
+      'SQL Server',
+      'Node-RED',
+      'PLC',
+      'Git',
+    ],
+  },
+  {
+    id: 1,
     role: 'Tesina',
     company: 'Licenciatura en Sistemas de Información',
     period: 'Julio 2026',
@@ -16,7 +44,7 @@ const experience = [
     stack: ['Python']
   },
   {
-    id: 1,
+    id: 2,
     role: 'Freelance Developer',
     company: 'Distrimaq',
     period: 'Junio 2025 - Actualidad',
@@ -29,7 +57,7 @@ const experience = [
     stack: ['Vue.js', 'HTML', 'CSS', 'JavaScript', 'Firebase', 'Cloudinary'],
   },
   {
-    id: 2,
+    id: 3,
     role: 'Desarrollador Full-Stack',
     company: 'RebaseIT',
     period: 'Agosto 2023 - Agosto 2025',
@@ -54,7 +82,7 @@ const experience = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     role: 'Asistente Técnico',
     company: 'Maxirest',
     period: '2023',

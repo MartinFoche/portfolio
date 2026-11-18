@@ -18,6 +18,16 @@ import woocomerceIcon from '@/assets/icons/woocommerce.png'
 import firebaseIcon from '@/assets/icons/firebaseIcon.png'
 import cloudinaryIcon from '@/assets/icons/cloudinary.webp'
 import pythonIcon from '@/assets/icons/python.svg.png'
+import postgresqlIcon from '@/assets/icons/postgresqlIcon.webp'
+import fastApiIcon from '@/assets/icons/fastapiIcon.webp'
+import reactIcon from '@/assets/icons/react.svg.png'
+import msiSistemaGestion from '@/assets/projects/msi-sistema-gestion.png'
+import MSIDash from '@/assets/projects/MSIDash.jpeg'
+import MSIApp from '@/assets/projects/MSIApp.jpeg'
+import fadelImage from '@/assets/projects/fadel.png'
+import inprocilImage from '@/assets/projects/inprocil.png'
+import sqlServerIcon from '@/assets/icons/sqlServer.webp'
+import nodeRedIcon from '@/assets/icons/node-red-icon.png'
 
 const projects = [
   {
@@ -105,6 +115,68 @@ const projects = [
     ],
     link: 'https://github.com/MartinFoche/tesina',
     image: appTesinaImage,
+  },
+  {
+    id: 7,
+    title:'App MSI',
+    description:
+    'Aplicación de escritorio para gestión de horarios, jornadas laborales, vacaciones, servicios y proyectos, con funcionalidades de seguimiento de actividades y registro de horas.',
+    tech: [
+      { icon: pythonIcon, name: 'Python' }, 
+      { icon: typescriptIcon, name: 'TypeScript' },
+      { icon: postgresqlIcon, name: 'PostgreSQL' },
+    ],
+    image: MSIApp,
+  },
+  {
+    id: 8,
+    title:'MSI Dashboard de métricas y tablero Kanban',
+    description:
+    'Dashboard web para visualizar métricas de proyectos, comparar horas de trabajo, analizar tareas internas y consultar resúmenes trimestrales. Incluye un tablero Kanban desarrollado desde cero e integrado para la planificación y seguimiento de tareas mediante reuniones Scrum.',
+    tech: [
+      { icon: reactIcon, name: 'React' },
+      { icon: typescriptIcon, name: 'TypeScript'},
+      { icon: postgresqlIcon, name: 'PostgreSQL'},
+    ],
+    image: MSIDash,
+  },
+  {
+    id: 9,
+    title:'MSI Sistema de Gestión de Infraestructura',
+    description:
+    'Aplicación web para administrar equipamiento, asignaciones, proveedores, clientes y accesos remotos, centralizando información de infraestructura y referencias a credenciales almacenadas en Vaultwarden.',
+    tech: [
+      { icon: pythonIcon, name: 'Python' }, 
+      { icon: fastApiIcon, name: 'FastAPI'},
+      { icon: vueIcon, name: 'Vue'},
+      { icon: typescriptIcon, name: 'TypeScript'},
+      { icon: postgresqlIcon, name: 'PostgreSQL'},
+    ],
+    image: msiSistemaGestion,
+  },
+  {
+    id: 10,
+    title:'MSI Integración y optimización de datos para Fadel',
+    description:
+    'Mantenimiento y optimización de procedimientos almacenados en SQL Server para consultar historiales de cajas y pallets. También se realizaron tareas de monitoreo de red para detectar interrupciones, latencia, nuevos dispositivos y eventos de conectividad.',
+    tech: [
+      { icon: pythonIcon, name: 'Python' }, 
+      { icon: sqlServerIcon, name: 'SQL Server'},
+    ],
+    image: fadelImage,
+  },
+  
+  {
+    id: 11,
+    title:'Sistema de monitoreo industrial para Inprocil',
+    description:
+    'Desarrollo de una solución de captura y almacenamiento de datos industriales a partir de un PLC existente. Implementación de flujos en Node-RED y persistencia en PostgreSQL para registrar presión, temperatura, consumo energético y marcas temporales, proporcionando información confiable y trazable.',
+    tech: [
+      { icon: pythonIcon, name: 'Python' }, 
+      { icon: nodeRedIcon, name: 'Node-RED'},
+      { icon: postgresqlIcon, name: 'PostgreSQL'},
+    ],
+    image: inprocilImage,
   }
 ]
 </script>
@@ -117,8 +189,9 @@ const projects = [
       <a
         v-for="(p, index) in projects"
         :key="p.title"
-        :href="p.link"
-        :target="p.link.startsWith('#') ? '_self' : '_blank'"
+        :href="p.link || '#'"
+        @click="!p.link && $event.preventDefault()"
+        :target="p.link?.startsWith('#') || !p.link ? '_self' : '_blank'"
         rel="noopener noreferrer"
         :class="[
           'group relative block p-6 rounded-2xl bg-white/5 border border-white/10 \
