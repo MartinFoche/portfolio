@@ -26,7 +26,7 @@ import MSIDash from '@/assets/projects/MSIDash.jpeg'
 import MSIApp from '@/assets/projects/MSIApp.jpeg'
 import fadelImage from '@/assets/projects/fadel.png'
 import inprocilImage from '@/assets/projects/inprocil.png'
-import sqlServerIcon from '@/assets/icons/sqlServer.webp'
+import sqlServerIcon from '@/assets/icons/sqlserver.webp'
 import nodeRedIcon from '@/assets/icons/node-red-icon.png'
 
 const projects = [
